@@ -1,0 +1,319 @@
+/* style.css */
+
+/* Basic Reset and Font */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
+
+/* Header and Navigation (No significant changes) */
+header {
+    background-color: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #7c5dfa; /* Primary purple color from the image */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 20px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #eee;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #7c5dfa;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons a.login {
+    background-color: transparent;
+    color: #555;
+    border: 1px solid #555;
+}
+
+.auth-buttons a:hover {
+    background-color: #684cd4;
+}
+.auth-buttons a.login:hover {
+    background-color: #eee;
+    color: #333;
+    border-color: #eee;
+}
+
+/* Hero Section with Image */
+.hero {
+    background: linear-gradient(135deg, #f0f0ff, #e0e0ff); /* Light purple gradient */
+    padding: 80px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+    text-align: left;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button.primary {
+    background-color: #7c5dfa;
+    color: #fff;
+}
+
+.button.secondary {
+    background-color: #fff;
+    color: #7c5dfa;
+    border: 1px solid #7c5dfa;
+}
+
+.button.primary:hover {
+    background-color: #684cd4;
+}
+
+.button.secondary:hover {
+    background-color: #f0f0ff;
+    color: #5a3eb0;
+    border-color: #5a3eb0;
+}
+
+/* Services Section with Icons */
+.services {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.service-card img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+/* Product Launch & Proven Strategies Sections with Images */
+.product-launch, .proven-strategies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-launch > div, .proven-strategies > div {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-launch .launch-image img,
+.proven-strategies .strategies-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-launch h3, .proven-strategies h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.product-launch p, .proven-strategies p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.proven-strategies {
+    flex-direction: row-reverse;
+    background-color: #f0f0ff; /* Light purple background for alternating section */
+}
+
+/* Pricing Section (No significant changes) */
+.pricing {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.pricing h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.pricing-card.featured {
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px); /* Slight lift for featured card */
+}
+
+.pricing-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 2em;
+    color: #7c5dfa;
+    margin-bottom: 20px;
+}
+
+.price span {
+    font-size: 0.8em;
+    color: #555;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.pricing-card ul li {
+    padding: 8px 0;
+    color: #555;
+    border-bottom: 1px solid #eee;
+}
+
+.pricing-card ul li:last-child {
+    border-bottom: none;
+}
+
+/* FAQ Section (No significant changes) */
+.faq {
+    padding: 60px 30px;
+    background-color: #f0f0ff;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.faq-items {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.faq-question {
+    background-color: #fff;
+}
